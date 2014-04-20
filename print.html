@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>AeroDynamics Club 3D Printer</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+
+        body {
+          margin-top: 100px;
+        }
+
+       footer {
+          margin: 20px 0;
+          background-color: #f5f5f5;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">AeroDynamics Club 3D-Printer</a>
+            </div>
+
+            
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="know_more.html">KNOW MORE</a>
+                    </li>
+                    <li><a href="faqs.html">FAQ</a>
+                    </li>
+                    <li><a href="gallery.html">Gallery</a>
+                    </li>
+                    <li><a href="pricing.html">Pricing, TC</a>
+                    </li>
+                    <li><a href="print.html">Print Now</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        
+    </nav>
+
+    <div class="container">
+        <div id="contact_form" class="row">
+          <div class="col-12 col-sm-12 col-lg-12">
+            <!-- <h2>AeroDynamics 3D Printer Services</h2> -->
+            <p>Please fill in the form along with the .htl file to get your 3D model printed from us.</p>
+            <form role="form" id="feedbackForm" enctype="multipart/form-data">
+              <div class="form-group has-feedback">
+                <label class="control-label" for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name">
+                <span class="glyphicon glyphicon-asterisk form-control-feedback"></span>
+                <span class="help-block" style="display: none;">Please enter your name.</span>
+              </div>
+              <div class="form-group has-feedback">
+                <label class="control-label" for="name">Student ID</label>
+                <input type="text" class="form-control" id="sid" name="sid">
+                <span class="glyphicon glyphicon-asterisk form-control-feedback"></span>
+                <span class="help-block" style="display: none;">Please enter a valid student ID.</span>
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="name">Hostel & Room No</label>
+                <input type="text" class="form-control" id="company" name="company">
+              </div>
+              <div class="form-group has-feedback">
+                <label class="control-label" for="name">.htl file for 3D model</label>
+                <input type="file" data-filename-placement="inside" id="upfile" name="upfile">
+                <span class="glyphicon glyphicon-asterisk form-control-feedback"></span>
+                <span class="help-block" style="display: none;">Please upload a valid .htl file.</span>
+              </div>
+              <div class="form-group has-feedback">
+                <label class="control-label" for="name">Phone</label>
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="XXX-XXX-XXXX">
+                <span class="glyphicon glyphicon-asterisk form-control-feedback"></span>
+                <span class="help-block" style="display: none;">Please enter a valid phone number.  Must be ten digits long.</span>
+              </div>
+              <div class="form-group has-feedback">
+                <label class="control-label" for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email">
+                <span class="glyphicon glyphicon-asterisk form-control-feedback"></span>
+                <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span>
+              </div>
+              <div class="form-group has-feedback">
+                <label class="control-label" for="message">Message*</label>
+                <textarea rows="10" cols="100" class="form-control" id="message" name="message"></textarea>
+                <span class="help-block" style="display: none;">Please enter a message.</span>
+              </div>
+              <img id="captcha" src="library/vender/securimage/securimage_show.php" alt="CAPTCHA Image" />
+              <a href="#" onclick="document.getElementById('captcha').src = 'library/vender/securimage/securimage_show.php?' + Math.random(); return false" class="btn btn-info btn-sm">Show a Different Image</a><br/>
+              <div class="form-group has-feedback" style="margin-top: 10px;">
+                <label class="control-label" for="message">Text within Image</label>
+                <input type="text" class="form-control" name="captcha_code" id="captcha_code" placeholder="For security, please enter the code displayed in the box." />
+                <span class="glyphicon glyphicon-asterisk form-control-feedback"></span>
+                <span class="help-block" style="display: none;">Please enter the code displayed within the image.</span>
+              </div>
+              
+              <span class="help-block" style="display: none;">Please enter a the security code.</span>
+              <button type="submit" id="feedbackSubmit" class="btn btn-primary btn-lg" style="display: block; margin-top: 10px;">Submit</button>
+            </form>
+            <h3>* Indicates a required field.</h3>
+          </div><!--/span-->
+        </div><!--/row-->
+        <hr>
+      </div>
+
+        <hr>
+
+        <footer>
+            <div class="row">
+                <div class="col-lg-12 text-muted">
+                    <p>AeroDynamics Club @ BITS-Goa</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    
+
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/print.js"></script>
+</body>
+
+</html>

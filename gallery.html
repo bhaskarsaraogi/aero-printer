@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <title>AeroDynamics Club 3D Printer</title>
+        <meta name="generator" content="Bootply" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="css/bootstrap.css" rel="stylesheet">        
+        <style type="text/css">
+          body {
+            margin-top: 100px;
+          }
+          footer {
+            margin: 20px 0;
+            background-color: #f5f5f5;
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+
+
+          .modal-dialog {}
+          .thumbnail {margin-bottom:6px;}
+
+          .carousel-control.left,.carousel-control.right{
+            background-image:none;
+            margin-top:10%;
+            width:5%;
+          }
+        </style>
+    </head>
+    
+  
+    <body  >
+
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">AeroDynamics Club 3D-Print</a>
+            </div>
+
+            
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="know_more.html">KNOW MORE</a>
+                    </li>
+                    <li><a href="faqs.html">FAQ</a>
+                    </li>
+                    <li><a href="gallery.html">Gallery</a>
+                    </li>
+                    <li><a href="pricing.html">Pricing, TC</a>
+                    </li>
+                    <li><a href="print.html">Print Now</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        
+    </nav>
+
+        
+        <div class="container">
+  <div class="row">
+    <div class="row">
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 1" href="#"><img class="thumbnail img-responsive" src="aero.png"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 2" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/2255EE"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 3" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/449955/FFF"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 4" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/992233"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 5" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/2255EE"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 6" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/449955/FFF"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 8" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/777"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 9" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/992233"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 10" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/EEE"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 11" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/449955/FFF"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 12" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/DDD"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 13" href="#"><img class="thumbnail img-responsive" src="//placehold.it/600x350/992233"></a></div>
+    </div>
+    <hr>
+    <footer>
+            <div class="row">
+                <div class="col-lg-12 text-muted">
+                    <p>AeroDynamics Club @ BITS-Goa</p>
+                </div>
+            </div>
+        </footer>
+    <hr>
+
+
+  </div>
+</div>
+<div class="modal" id="myModal" role="dialog">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  <div class="modal-header">
+    <button class="close" type="button" data-dismiss="modal">×</button>
+    <h3 class="modal-title"></h3>
+  </div>
+  <div class="modal-body">
+    <div id="modalCarousel" class="carousel">
+ 
+          <div class="carousel-inner">
+           
+          </div>
+          
+          <a class="carousel-control left" href="#modaCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+          <a class="carousel-control right" href="#modalCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+          
+        </div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-default" data-dismiss="modal">Close</button>
+  </div>
+   </div>
+  </div>
+</div>
+
+
+
+        
+      <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script type='text/javascript' src="js/bootstrap.js"></script>
+      <script type='text/javascript'>
+        
+        $(document).ready(function() {
+        
+            
+          $('.row .thumbnail').on('load', function() {
+  
+            }).each(function(i) {
+              if(this.complete) {
+                var item = $('<div class="item"></div>');
+                var itemDiv = $(this).parents('div');
+                var title = $(this).parent('a').attr("title");
+    
+                item.attr("title",title);
+                $(itemDiv.html()).appendTo(item);
+                item.appendTo('.carousel-inner'); 
+              if (i==0){ 
+                item.addClass('active');
+              }
+              }
+            });
+
+
+        $('#modalCarousel').carousel({interval:false});
+
+
+        $('#modalCarousel').on('slid.bs.carousel', function () {
+          $('.modal-title').html($(this).find('.active').attr("title"));
+        })
+
+
+        $('.row .thumbnail').click(function(){
+          var idx = $(this).parents('div').index();
+          var id = parseInt(idx);
+        $('#myModal').modal('show'); 
+        $('#modalCarousel').carousel(id); 
+      });
+
+        
+        });
+        
+        </script>
+        
+    </body>
+</html>
